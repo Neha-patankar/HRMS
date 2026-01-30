@@ -16,18 +16,18 @@ export default function Dashboard() {
     <div className="min-h-screen flex bg-slate-100">
       
       {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-md border-r border-slate-200 flex flex-col">
+      <aside className="w-64 bg-blue-950 shadow-md border-r border-slate-200 flex flex-col">
         <div className="p-6 border-b border-slate-200">
-          <h1 className="text-2xl font-bold text-indigo-700">HRMS Lite</h1>
-          <p className="text-xs text-slate-500 mt-1">HR Management System</p>
+          <h1 className="text-3xl font-bold text-white">HRMS Lite</h1>
+          <p className="text-md text-gray-100 mt-1 font-bold">HR Management System</p>
         </div>
 
         <nav className="flex-1 p-4 space-y-2">
           <button
             onClick={() => setActivePage("dashboard")}
-            className={`w-full text-left px-4 py-2 rounded-lg font-medium ${
+            className={`w-full text-left px-4 py-2 rounded-lg font-medium bg-white ${
               activePage === "dashboard"
-                ? "bg-indigo-50 text-indigo-700"
+                ? "bg-orange-500 text-white"
                 : "hover:bg-slate-100 text-slate-700"
             }`}
           >
@@ -36,9 +36,9 @@ export default function Dashboard() {
 
           <button
             onClick={() => setActivePage("employees")}
-            className={`w-full text-left px-4 py-2 rounded-lg font-medium ${
+            className={`w-full text-left px-4 py-2 rounded-lg font-medium bg-white ${
               activePage === "employees"
-                ? "bg-indigo-50 text-indigo-700"
+                ? "bg-orange-500 text-white"
                 : "hover:bg-slate-100 text-slate-700"
             }`}
           >
@@ -47,9 +47,9 @@ export default function Dashboard() {
 
           <button
             onClick={() => setActivePage("attendance")}
-            className={`w-full text-left px-4 py-2 rounded-lg font-medium ${
+            className={`w-full text-left px-4 py-2 rounded-lg font-medium bg-white ${
               activePage === "attendance"
-                ? "bg-indigo-50 text-indigo-700"
+                ? "bg-orange-500 text-white"
                 : "hover:bg-slate-100 text-slate-700"
             }`}
           >
@@ -57,8 +57,8 @@ export default function Dashboard() {
           </button>
         </nav>
 
-        <div className="p-4 border-t border-slate-200 text-sm text-slate-500">
-          © 2025 HRMS Lite
+        <div className="p-4 border-t border-slate-200 text-md text-white">
+          © 2026 HRMS Lite
         </div>
       </aside>
 
@@ -97,7 +97,7 @@ export default function Dashboard() {
 
           {/* 👉 Attendance Page */}
           {activePage === "attendance" && (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="">
               <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
                 <MarkAttendance employee={selectedEmployee} />
               </div>
