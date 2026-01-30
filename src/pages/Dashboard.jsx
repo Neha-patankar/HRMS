@@ -66,7 +66,7 @@ export default function Dashboard() {
       <div className="flex-1 flex flex-col">
         
         {/* Header */}
-        <header className="bg-white shadow-sm border-b border-slate-200 px-6 py-4">
+        <header className="bg-blue-950 shadow-sm border-b border-slate-200 px-6 py-4">
           <h2 className="text-xl font-semibold text-slate-900 capitalize">
             {activePage}
           </h2>
