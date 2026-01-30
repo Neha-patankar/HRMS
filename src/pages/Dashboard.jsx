@@ -67,7 +67,7 @@ export default function Dashboard() {
         
         {/* Header */}
         <header className="bg-blue-950 shadow-sm border-b border-slate-200 px-6 py-4">
-          <h2 className="text-xl font-semibold text-slate-900 capitalize">
+          <h2 className="text-xl font-semibold text-white capitalize">
             {activePage}
           </h2>
         </header>
